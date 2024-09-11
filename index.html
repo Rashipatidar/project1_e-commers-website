@@ -11,18 +11,18 @@
     <div class="login-container">
         <h2>InnovaTech</h2>
         <form id="loginform">
-            <label for="useername">Username</label>
-            <input type="text" id="username " placeholder=" Enter username" required>
-            <label for="password">password</label>
-            <input type="password" id="password" placeholder="Enter password" required>
-            <p>forget <a href="/reset password">password</a></p>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" autocomplete="username" required aria-label="Username">
             
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter password" autocomplete="current-password" required aria-label="Password">
+            
+            <p>Forgot <a href="/reset-password">password</a>?</p>
             
             <button type="submit">Login</button>
             <p id="error-message" class="error-message"></p>
         </form>
         <p>Don't have an account? <a href="/register">Register Here</a></p>
     </div>
-    
 </body>
 </html>
