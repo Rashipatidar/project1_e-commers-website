@@ -1,69 +1,108 @@
-body{
-    font-family: arial, sans-serif;
+
+/* General body styling */
+body {
+    font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin:0;
+    margin: 0;
 }
 
-.login-container{
-    background: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,1);
-    width: 300px;
+/* Container for login form */
+.login-container {
+    background: #ffffffa4;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-h2{
-    margin-bottom: 20px;
+/* Hover effect for the container */
+.login-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.39);
 }
 
-label{
+/* Heading styling */
+h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Label styling */
+label {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 8px;
     font-weight: bold;
+    color: #555;
 }
 
-input[type="text"],input[type="password"]{
+/* Input styling */
+input[type="text"],
+input[type="password"] {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 16px;
+    transition: border-color 0.3s;
 }
 
-button{
+/* Input focus state */
+input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Button styling */
+button {
     width: 100%;
-    padding: 10px;
-    background-color: #333;
+    padding: 12px;
+    background-color: #007bff;
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 6px;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
-button:hover{
-    background-color: #555;
+/* Button hover and active states */
+button:hover {
+    background-color: #0056b3;
 }
 
-.error-message{
-    color:red;
-    margin-top: 10px;
+button:active {
+    transform: scale(0.98);
 }
 
-p{
-    margin-top: 10px;
+/* Error message styling */
+.error-message {
+    color: #e74c3c;
+    margin-top: 15px;
 }
 
-a{
-    color: #333;
+/* Paragraph styling */
+p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* Anchor styling */
+a {
+    color: #007bff;
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     text-decoration: underline;
 }
